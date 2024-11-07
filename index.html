@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html>
+<title>Moments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="w3.css">
+        <link rel="icon" type="image/png" href="fav.png">
+        <link rel="icon" type="image/png" href="fav.png">
+
+  <link rel="stylesheet" href="index.css"> 
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Arizonia&family=Bubblegum+Sans&family=Capriola&family=Cinzel&family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Gloria+Hallelujah&family=Gochi+Hand&family=Knewave&family=Mingzat&family=Nanum+Myeongjo:wght@400;700&family=Neuton&family=Oleo+Script&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Arizonia&family=Bubblegum+Sans&family=Capriola&family=Cinzel&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond&family=Gloria+Hallelujah&family=Gochi+Hand&family=Knewave&family=Mingzat&family=Nanum+Myeongjo:wght@400;700;800&family=Neuton&family=Oleo+Script&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<body  style="margin:0px;padding:0px; font-family: 'Montserrat" class="font-['Montserrat']" >
+
+
+<div class=" w3-hide-medium">
+    
+  <!-- <div style="background-color:black ;height:55px" class="w3-row">
+</div> -->
+<div >
+<nav class="bg-black shadow-lg fixed hidden w-full z-50" id="main-nav">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <img src="./log.png" alt="logo" class="h-12" />
+      </div>
+      <div class="hidden md:flex" id="main-nav">
+        <a href="#" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Home</a>
+        <a href="#About" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">About</a>
+        <a href="#Blog" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Blog</a>
+        <a href="#" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-white hover:text-primary-700 focus:outline-none" id="menu-toggle">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-nav">
+   <ul class="mobile-nav-list">
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#home" class=" hover:text-white px-3 py-2 rounded-md text-2xl active">Home</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#About" class=" hover:text-white px-3 py-2 rounded-md text-2xl">About</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#Blog" class=" hover:text-white px-3 py-2 rounded-md text-2xl">Blog</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#Contact" class=" hover:text-white px-3 py-2 rounded-md text-2xl">Contact</a>
+  </li>
+</ul>
+    <button class="mobile-nav-close">✕</button>
+  </div>
+</nav>
+  
+  <section class="py-28" id="home">
+    <div
+      class="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8"
+    >
+      <div class=" space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+        <h1 class="text-sm text-indigo-600 font-medium">
+          
+        </h1>
+        <h2 class="text-4xl text-white font-extrabold md:text-5xl">
+         Your Next Level of Transformation Starts Here
+        </h2>
+        <p style="color:rgb(251 146 60)" class="text-2xl">
+       Unlock your potential below
+        </p>
+        <div class="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+          <a
+            href="javascript:void(0)"
+            class="block py-2 px-4 text-center text-white font-medium bg-black duration-150 hover:bg-orange-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
+          >
+            Let's get started
+          </a>
+          
+        </div>
+      </div>
+      <!-- <div class="flex-none mt-14 md:mt-0 md:max-w-xl">
+        <img
+          src="bannerpic.jpg"
+          class="md:rounded-tl-[108px]"
+          alt=""
+        />
+      </div> -->
+    </div>
+    <!-- <div class="mt-14 px-4 md:px-8">
+      <p class="text-center text-sm text-gray-700 font-semibold">
+        Trusted by the best companies
+      </p>
+      <div class="flex justify-center items-center flex-wrap gap-x-12 gap-y-6 mt-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="190" height="33" fill="none"><g fill="#4B5563" clip-path="url(#a)"><path d="M16.416 32.17v-6.175c6.554 0 11.596-6.49 9.106-13.36-.945-2.552-2.961-4.6-5.514-5.514-6.869-2.49-13.36 2.552-13.36 9.106H.473c0-10.43 10.083-18.559 21.016-15.156 4.79 1.481 8.57 5.294 10.052 10.052 3.403 10.965-4.695 21.048-15.125 21.048Z" /><path fill-rule="evenodd" d="M16.416 25.995h-6.144v-6.144h6.144v6.144ZM10.272 30.721H5.546v-4.726h4.726v4.726ZM5.546 25.995h-3.97v-3.939h3.97v3.939Z" clip-rule="evenodd" /><path d="M57.19 9.516c-1.828-1.26-4.097-1.922-6.744-1.922H44.68V25.9h5.766c2.647 0 4.916-.661 6.743-2.016 1.008-.693 1.796-1.702 2.332-2.93.535-1.23.819-2.679.819-4.317 0-1.607-.284-3.057-.82-4.286-.535-1.197-1.323-2.174-2.33-2.835Zm-9.139 1.197h1.828c2.017 0 3.687.41 4.947 1.166 1.386.85 2.111 2.458 2.111 4.758 0 2.394-.725 4.064-2.111 4.978-1.197.788-2.867 1.198-4.916 1.198h-1.827l-.032-12.1ZM64.373 7.373c-.567 0-1.04.19-1.418.567-.378.378-.599.851-.599 1.387 0 .567.19 1.04.6 1.418.377.378.85.598 1.417.598.567 0 1.04-.189 1.418-.598.378-.378.599-.883.599-1.418 0-.567-.19-1.04-.6-1.387a1.975 1.975 0 0 0-1.417-.567ZM65.949 13.013h-3.246v12.919h3.246V13.013ZM77.764 14.085c-.976-.883-2.08-1.387-3.245-1.387-1.796 0-3.277.63-4.443 1.828-1.166 1.197-1.733 2.773-1.733 4.631 0 1.828.567 3.372 1.733 4.632 1.166 1.198 2.647 1.828 4.443 1.828 1.26 0 2.332-.347 3.214-1.04v.315c0 1.072-.284 1.89-.85 2.49-.568.566-1.356.85-2.332.85-1.513 0-2.427-.599-3.593-2.142l-2.205 2.11.063.095c.472.662 1.197 1.323 2.174 1.954.977.63 2.174.945 3.624.945 1.922 0 3.497-.599 4.631-1.764 1.166-1.166 1.733-2.742 1.733-4.695V13.013h-3.182l-.032 1.072Zm-.85 7.625c-.567.63-1.292.945-2.237.945-.946 0-1.67-.315-2.206-.945-.567-.63-.85-1.481-.85-2.521 0-1.04.283-1.922.85-2.552.567-.63 1.292-.977 2.206-.977.945 0 1.67.315 2.237.977.567.63.85 1.512.85 2.552s-.315 1.89-.85 2.52ZM86.965 13.013H83.72v12.919h3.245V13.013ZM85.39 7.373c-.567 0-1.04.19-1.418.567-.378.378-.599.851-.599 1.387 0 .567.19 1.04.599 1.418.378.378.85.598 1.418.598.567 0 1.04-.189 1.418-.598.378-.378.598-.883.598-1.418 0-.567-.189-1.04-.599-1.387a1.975 1.975 0 0 0-1.417-.567ZM94.086 9.547h-3.182v3.498h-1.86v2.962h1.86v5.356c0 1.67.346 2.867 1.008 3.56.662.694 1.828 1.04 3.497 1.04.536 0 1.072-.031 1.576-.063h.157V22.94l-1.102.063c-.788 0-1.292-.126-1.544-.41s-.378-.85-.378-1.701v-4.916h3.025v-2.962h-3.025V9.547h-.032ZM115.576 7.594h-3.246V25.9h3.246V7.594ZM148.376 21.3c-.567.662-1.166 1.229-1.638 1.512-.441.284-1.008.442-1.67.442-.945 0-1.733-.347-2.363-1.072-.631-.724-.946-1.638-.946-2.74 0-1.104.315-2.018.914-2.71.63-.725 1.387-1.072 2.332-1.072 1.04 0 2.142.662 3.088 1.764l2.142-2.048c-1.386-1.827-3.182-2.678-5.325-2.678-1.796 0-3.34.662-4.6 1.922-1.26 1.26-1.891 2.899-1.891 4.821 0 1.922.631 3.53 1.891 4.821 1.26 1.292 2.804 1.922 4.6 1.922 2.363 0 4.254-1.008 5.514-2.867l-2.048-2.017ZM161.705 14.81a5.263 5.263 0 0 0-1.859-1.545c-.788-.378-1.67-.567-2.679-.567-1.827 0-3.308.662-4.411 1.985-1.071 1.324-1.638 2.93-1.638 4.853 0 1.953.598 3.56 1.796 4.82 1.166 1.23 2.773 1.86 4.695 1.86 2.174 0 4.001-.883 5.325-2.647l.063-.095-2.111-2.048c-.19.252-.473.504-.725.756-.315.316-.63.536-.945.694-.473.252-1.04.346-1.639.346-.914 0-1.638-.252-2.206-.788-.535-.472-.85-1.134-.913-1.953h8.602l.031-1.198a8.48 8.48 0 0 0-.346-2.394 7.177 7.177 0 0 0-1.04-2.08Zm-7.09 3.056c.158-.63.441-1.135.851-1.544.441-.441 1.008-.662 1.701-.662.788 0 1.387.22 1.796.662.379.41.599.913.662 1.512h-5.01v.032ZM174.183 13.99c-.977-.85-2.332-1.26-4.034-1.26a6.85 6.85 0 0 0-2.993.693c-.851.44-1.67 1.134-2.206 2.08l.032.03 2.079 1.986c.851-1.355 1.796-1.827 3.057-1.827.693 0 1.229.188 1.67.535.441.347.63.82.63 1.386v.63a8.067 8.067 0 0 0-2.395-.377c-1.607 0-2.93.378-3.907 1.134-.977.756-1.481 1.859-1.481 3.214 0 1.197.41 2.206 1.261 2.93.85.693 1.89 1.072 3.119 1.072 1.229 0 2.395-.505 3.435-1.355v1.07h3.182v-8.318c.063-1.543-.441-2.772-1.449-3.623Zm-5.767 6.995c.378-.252.883-.378 1.544-.378.788 0 1.607.157 2.458.473v1.26c-.693.662-1.638.977-2.804.977-.567 0-1.009-.126-1.292-.378-.284-.253-.441-.536-.441-.946 0-.41.189-.756.535-1.008ZM188.173 14.242c-.914-1.008-2.175-1.512-3.782-1.512-1.291 0-2.331.378-3.119 1.102v-.787h-3.182v12.918h3.245v-7.152c0-.977.221-1.765.693-2.3.473-.567 1.072-.82 1.922-.82.725 0 1.292.252 1.702.725.409.504.63 1.166.63 2.017V25.9h3.245v-7.467c0-1.765-.441-3.183-1.354-4.19ZM108.265 13.99c-.976-.85-2.331-1.26-4.033-1.26a6.85 6.85 0 0 0-2.993.693c-.851.44-1.67 1.134-2.206 2.08l.032.03 2.079 1.986c.851-1.355 1.796-1.827 3.057-1.827.693 0 1.228.188 1.67.535.441.347.63.82.63 1.386v.63a8.067 8.067 0 0 0-2.395-.377c-1.607 0-2.93.378-3.907 1.134-.977.756-1.481 1.859-1.481 3.214 0 1.197.41 2.206 1.26 2.93.851.693 1.891 1.072 3.12 1.072s2.394-.505 3.434-1.355v1.07h3.183v-8.318c.031-1.543-.473-2.772-1.45-3.623Zm-5.766 6.995c.378-.252.882-.378 1.544-.378.788 0 1.607.157 2.458.473v1.26c-.693.662-1.639.977-2.805.977-.567 0-1.008-.126-1.291-.378-.284-.253-.442-.536-.442-.946 0-.41.158-.756.536-1.008ZM127.36 26.184c-5.199 0-9.453-4.222-9.453-9.453a9.44 9.44 0 0 1 9.453-9.452c5.199 0 9.453 4.222 9.453 9.452 0 5.23-4.254 9.453-9.453 9.453Zm0-15.534a6.118 6.118 0 0 0-6.113 6.113 6.118 6.118 0 0 0 6.113 6.113 6.12 6.12 0 0 0 6.113-6.113 6.12 6.12 0 0 0-6.113-6.113Z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h190v32.454H0z" /></clipPath></defs></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="28" fill="none"><g clip-path="url(#a)"><path fill="#4B5563" d="M60.128 7.467c-4.664 0-8.027 3.042-8.027 7.605 0 4.563 3.781 7.605 8.45 7.605 2.818 0 5.302-1.116 6.84-2.996l-3.232-1.867c-.854.934-2.15 1.479-3.608 1.479-2.024 0-3.743-1.056-4.381-2.746h11.838c.093-.474.148-.964.148-1.48 0-4.558-3.359-7.6-8.028-7.6Zm-3.992 6.126c.528-1.685 1.973-2.746 3.992-2.746 2.024 0 3.469 1.06 3.993 2.746h-7.985ZM55.18 2.82 43.474 23.1 31.763 2.82h4.39l7.317 12.675L50.787 2.82h4.394ZM15.611.708l15.61 27.039H0L15.61.707ZM85.14 15.072c0 2.535 1.656 4.225 4.225 4.225 1.74 0 3.046-.79 3.717-2.079l3.245 1.872c-1.343 2.24-3.861 3.587-6.962 3.587-4.669 0-8.028-3.042-8.028-7.605 0-4.563 3.363-7.605 8.028-7.605 3.1 0 5.615 1.348 6.962 3.587l-3.245 1.872c-.671-1.289-1.977-2.079-3.717-2.079-2.565 0-4.225 1.69-4.225 4.225ZM119.986 2.82v19.434h-3.802V2.82h3.802Zm-14.364 4.647c-4.664 0-8.027 3.042-8.027 7.605 0 4.563 3.785 7.605 8.449 7.605 2.818 0 5.303-1.116 6.84-2.996l-3.232-1.867c-.853.934-2.15 1.479-3.608 1.479-2.023 0-3.743-1.056-4.381-2.746h11.838c.093-.474.148-.964.148-1.48 0-4.558-3.359-7.6-8.027-7.6Zm-3.993 6.126c.529-1.685 1.969-2.746 3.993-2.746 2.023 0 3.468 1.06 3.992 2.746h-7.985ZM80.069 7.89v4.094a4.816 4.816 0 0 0-1.351-.207c-2.455 0-4.225 1.69-4.225 4.225v6.252h-3.802V7.89h3.802v3.887c0-2.147 2.497-3.887 5.577-3.887Z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 .708h120v27.039H0z" /></clipPath></defs></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="180" height="27" fill="none"><g fill="#4B5563" clip-path="url(#a)"><path d="m39.535 25.951.296-1.025c.351-1.219.221-2.344-.37-3.173-.553-.762-1.454-1.21-2.557-1.263l-20.874-.265a.406.406 0 0 1-.373-.553.554.554 0 0 1 .483-.37l21.077-.276c2.487-.114 5.207-2.142 6.155-4.619l1.199-3.14a.74.74 0 0 0 .033-.425 13.727 13.727 0 0 0-26.39-1.42 6.177 6.177 0 0 0-9.674 6.472A8.77 8.77 0 0 0 .094 25.96a.406.406 0 0 0 .4.35h38.552a.506.506 0 0 0 .49-.358ZM46.492 11.505c-.184 0-.378.006-.58.017-.031 0-.061.007-.089.02a.323.323 0 0 0-.21.22l-.83 2.836c-.353 1.219-.223 2.344.371 3.173a3.22 3.22 0 0 0 2.554 1.263l4.452.276a.397.397 0 0 1 .385.355.414.414 0 0 1-.023.195.553.553 0 0 1-.483.37l-4.624.277c-2.512.116-5.218 2.142-6.166 4.615l-.334.874a.248.248 0 0 0 .218.337H57.06a.428.428 0 0 0 .426-.323 11.425 11.425 0 0 0-10.989-14.505h-.005ZM75.459 16.621h2.633v7.202H82.7v2.308h-7.242v-9.51ZM85.43 21.413v-.024c0-2.731 2.211-4.948 5.135-4.948s5.108 2.19 5.108 4.92v.027c0 2.731-2.211 4.945-5.135 4.945s-5.108-2.197-5.108-4.92Zm7.553 0v-.024c0-1.382-.992-2.568-2.445-2.568-1.454 0-2.405 1.166-2.405 2.54v.027c0 1.382.992 2.568 2.432 2.568s2.419-1.169 2.419-2.543M98.898 21.966v-5.345h2.678v5.284c0 1.382.691 2.026 1.752 2.026 1.062 0 1.752-.624 1.752-1.957v-5.353h2.676v5.27c0 3.071-1.752 4.423-4.455 4.423-2.703 0-4.403-1.382-4.403-4.348M111.791 16.621h3.667c3.397 0 5.367 1.957 5.367 4.699v.027c0 2.744-1.998 4.781-5.419 4.781h-3.615v-9.507Zm3.709 7.186c1.575 0 2.623-.87 2.623-2.407v-.025c0-1.523-1.048-2.407-2.623-2.407h-1.081v4.828l1.081.01ZM124.656 16.621h7.606v2.31h-4.969v1.617h4.496v2.187h-4.496v3.396h-2.637v-9.51ZM135.932 16.621h2.634v7.202h4.607v2.308h-7.241v-9.51ZM150.071 16.555h2.54l4.038 9.576h-2.824l-.694-1.697h-3.67l-.677 1.697h-2.764l4.051-9.576Zm2.308 5.826-1.058-2.703-1.084 2.703h2.142ZM160.043 16.621h4.497c1.456 0 2.459.382 3.098 1.034a2.937 2.937 0 0 1 .843 2.21v.028a3.013 3.013 0 0 1-1.957 2.922l2.269 3.316h-3.04l-1.918-2.88h-1.155v2.88h-2.637v-9.51Zm4.375 4.566c.898 0 1.415-.437 1.415-1.128v-.027c0-.75-.553-1.128-1.429-1.128h-1.724v2.283h1.738ZM172.284 16.621h7.65v2.242h-5.041v1.44h4.565v2.078h-4.565v1.509H180v2.241h-7.716v-9.51ZM69.688 22.519a2.333 2.333 0 0 1-2.178 1.426c-1.443 0-2.432-1.197-2.432-2.567v-.028c0-1.382.965-2.543 2.404-2.543a2.388 2.388 0 0 1 2.261 1.578h2.764c-.431-2.263-2.418-3.946-4.997-3.946-2.935 0-5.135 2.21-5.135 4.947v.027c0 2.731 2.172 4.92 5.107 4.92 2.51 0 4.472-1.625 4.989-3.803l-2.783-.011Z" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 .133h180v26.189H0z" /></clipPath></defs></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="123" height="27" fill="none"><path fill="#4B5563" d="M46.72 6.111h-3.102v13.951h8.927v-2.053H46.72V6.111ZM63.495 12.03c-.396-.465-.957-.83-1.686-1.096a6.372 6.372 0 0 0-2.198-.398c-.953 0-1.825.13-2.616.388-.791.26-1.47.615-2.036 1.067a5 5 0 0 0-1.322 1.564 3.91 3.91 0 0 0-.472 1.863c0 .665.157 1.29.472 1.874a5.033 5.033 0 0 0 1.322 1.554c.566.452 1.244.808 2.036 1.067.79.259 1.663.388 2.616.388.737 0 1.47-.133 2.198-.398.729-.266 1.29-.631 1.686-1.096v1.255h2.94v-9.287h-2.94v1.255Zm-.27 4.524c-.18.36-.431.671-.755.937a3.79 3.79 0 0 1-1.173.638c-.459.16-.967.239-1.524.239-.558 0-1.061-.08-1.51-.24a3.818 3.818 0 0 1-1.16-.637 2.708 2.708 0 0 1-.742-.937 2.604 2.604 0 0 1-.256-1.136c0-.398.085-.777.256-1.136.17-.358.418-.67.742-.936a3.82 3.82 0 0 1 1.16-.638c.449-.16.952-.24 1.51-.24.557 0 1.065.08 1.524.24.458.16.85.372 1.173.638.324.266.575.578.755.936.18.36.27.738.27 1.136 0 .399-.09.778-.27 1.136ZM87.39 12.03c-.395-.465-.957-.83-1.685-1.096a6.372 6.372 0 0 0-2.198-.398c-.953 0-1.825.13-2.616.388-.791.26-1.47.615-2.036 1.067a5 5 0 0 0-1.322 1.564 3.91 3.91 0 0 0-.472 1.863c0 .665.157 1.29.472 1.874a5.033 5.033 0 0 0 1.322 1.554c.566.452 1.245.808 2.036 1.067.79.259 1.663.388 2.616.388.737 0 1.47-.133 2.198-.398.728-.266 1.29-.631 1.686-1.096v1.255h2.94v-9.287h-2.94v1.255Zm-.269 4.524c-.18.36-.431.671-.755.937a3.79 3.79 0 0 1-1.173.638c-.459.16-.967.239-1.524.239-.558 0-1.061-.08-1.51-.24a3.818 3.818 0 0 1-1.16-.637 2.708 2.708 0 0 1-.742-.937A2.604 2.604 0 0 1 80 15.418c0-.398.085-.777.256-1.136.17-.358.418-.67.742-.936a3.82 3.82 0 0 1 1.16-.638c.449-.16.952-.24 1.51-.24.557 0 1.065.08 1.524.24.458.16.85.372 1.173.638.324.266.575.578.755.936.18.36.27.738.27 1.136 0 .399-.09.778-.27 1.136ZM122.58 6.111h-2.939v13.951h2.939V6.112ZM68.754 20.062h2.94v-7.15h5.043v-2.137h-7.983v9.287ZM102.116 10.775l-3.695 7.112-3.694-7.112h-2.978l4.825 9.287h3.695l4.825-9.287h-2.978ZM111.506 10.536c-3.6 0-6.449 2.186-6.449 4.883 0 2.98 2.758 4.882 6.826 4.882 2.277 0 3.731-.643 5.507-2.044l-1.986-1.136c-.002.001-1.499 1.455-3.736 1.455-2.6 0-3.694-1.55-3.694-2.35h9.753c.512-3.068-2.218-5.69-6.221-5.69Zm-3.524 4.075c.022-.178.361-2.35 3.501-2.35 3.14 0 3.522 2.171 3.544 2.35h-7.045ZM34.671 6.002c-.004-.012-.014-.023-.02-.035-.01-.021-.02-.044-.035-.064-.01-.013-.026-.024-.039-.036-.016-.017-.03-.034-.05-.049-.016-.011-.036-.02-.054-.03-.02-.012-.039-.026-.062-.036l-6.715-2.857a.734.734 0 0 0-.559 0l-6.714 2.857c-.023.01-.042.023-.062.035-.018.01-.039.02-.055.031-.02.015-.034.032-.05.048-.012.013-.027.024-.038.037-.016.02-.025.042-.036.064-.006.012-.015.023-.02.035a.315.315 0 0 0-.02.108v5.425l-5.595 2.38V3.303a.317.317 0 0 0-.019-.108c-.004-.012-.014-.023-.02-.035-.01-.022-.02-.044-.035-.064-.011-.013-.026-.024-.039-.037-.016-.016-.03-.033-.05-.048-.016-.012-.036-.02-.054-.03-.02-.012-.04-.026-.062-.036L7.552.087a.734.734 0 0 0-.558 0L.28 2.944c-.023.01-.042.024-.062.035C.2 2.99.179 3 .163 3.01c-.02.015-.033.032-.05.048-.012.013-.027.024-.038.037-.016.02-.025.043-.036.064-.006.012-.015.023-.02.035A.315.315 0 0 0 0 3.302v16.993c0 .148.107.285.28.359l13.43 5.713c.029.012.06.02.092.028.014.004.028.01.043.013a.748.748 0 0 0 .287 0c.013-.003.025-.008.038-.012.033-.008.066-.016.097-.03l13.43-5.712c.173-.074.28-.21.28-.359V14.87l6.434-2.737c.173-.074.28-.21.28-.359V6.11a.326.326 0 0 0-.02-.108ZM13.987 19.82l-5.585-2.335 5.865-2.495 6.435-2.738 5.59 2.377-4.101 1.73-8.204 3.46Zm12.87-10.614v4.71l-2.35-1-3.245-1.38v-4.71l2.35.999 3.245 1.38Zm.56-5.475 5.593 2.38-5.593 2.379-5.593-2.38 5.593-2.38ZM10.183 15.773l-2.35 1V6.397l3.246-1.381 2.35-1v10.375l-3.246 1.38ZM7.273.923l5.593 2.38-5.593 2.379-5.593-2.38L7.273.922ZM1.118 4.017l2.35 1 3.246 1.38V17.49c0 .016.006.03.008.046.004.02.004.041.012.06v.002c.006.016.018.03.026.046.01.018.017.036.03.052v.001c.012.015.028.027.042.04.015.015.028.03.046.044l.002.001c.016.012.035.02.053.03.02.012.038.025.06.035h.003l.002.002 6.43 2.689v4.756l-12.31-5.236V4.017Zm25.74 16.04-12.31 5.236v-4.757l9.116-3.846 3.193-1.347v4.713Zm6.714-8.521-5.596 2.38v-4.71l3.246-1.381 2.35-1v4.71Z" /></svg>
+      </div>
+    </div> -->
+  </section>
+  <!-- ====== About Section Start -->
+<section
+   class=" pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
+  id="About" >
+   <div class="container mx-auto">
+      <div class="flex flex-wrap items-center justify-between -mx-4">
+         <div class="w-full px-4 lg:w-6/12">
+            <div class="flex items-center -mx-3 sm:-mx-4">
+               <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                  <div class="py-3 sm:py-4">
+                     <img
+                        src="./d.jpg"
+                        alt=""
+                        class="w-full rounded-2xl"
+                        />
+                  </div>
+                  <div class="py-3 sm:py-4">
+                     <img
+                        src="./f.jpg"
+                        alt=""
+                        class="w-full rounded-2xl"
+                        />
+                  </div>
+               </div>
+               <div class="w-full px-3 sm:px-4 xl:w-1/2">
+                  <div class="relative z-10 my-4">
+                     <img
+                        src="./newsletter.jpg"
+                        alt=""
+                        class="w-full rounded-2xl"
+                        />
+                     <!-- <span class="absolute -right-7 -bottom-7 z-[-1]">
+                        <svg
+                           width="134"
+                           height="106"
+                           viewBox="0 0 134 106"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                           >
+                           <circle
+                              cx="1.66667"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 31 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3334"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 60.3334 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 103 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="104"
+                              r="1.66667"
+                              transform="rotate(-90 132 104)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="89.3333"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 89.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="89.3333"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 89.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="89.3333"
+                              r="1.66667"
+                              transform="rotate(-90 31 89.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="89.3333"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 89.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="89.3338"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 89.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="89.3338"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 89.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="89.3338"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 89.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="89.3338"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 89.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="89.3338"
+                              r="1.66667"
+                              transform="rotate(-90 103 89.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="89.3338"
+                              r="1.66667"
+                              transform="rotate(-90 132 89.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="74.6673"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 74.6673)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="31.0003"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 31.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="31.0003"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 31.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 31 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="31.0003"
+                              r="1.66667"
+                              transform="rotate(-90 31 31.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="31.0003"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 31.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="30.9998"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 30.9998)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="30.9998"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 30.9998)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="30.9998"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 30.9998)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="30.9998"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 30.9998)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 103 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="30.9998"
+                              r="1.66667"
+                              transform="rotate(-90 103 30.9998)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="74.6668"
+                              r="1.66667"
+                              transform="rotate(-90 132 74.6668)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="30.9998"
+                              r="1.66667"
+                              transform="rotate(-90 132 30.9998)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 31 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 31 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 103 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 103 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="60.0003"
+                              r="1.66667"
+                              transform="rotate(-90 132 60.0003)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="16.3333"
+                              r="1.66667"
+                              transform="rotate(-90 132 16.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="45.3333"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 45.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="1.66667"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 1.66667 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="45.3333"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 45.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="16.3333"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 16.3333 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="45.3333"
+                              r="1.66667"
+                              transform="rotate(-90 31 45.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="31"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 31 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="45.3333"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 45.3333)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="45.6667"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 45.6667 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="45.3338"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 45.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="60.3333"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 60.3333 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="45.3338"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 45.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="88.6667"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 88.6667 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="45.3338"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 45.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="117.667"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 117.667 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="45.3338"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 45.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="74.6667"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 74.6667 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="45.3338"
+                              r="1.66667"
+                              transform="rotate(-90 103 45.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="103"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 103 1.66683)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="45.3338"
+                              r="1.66667"
+                              transform="rotate(-90 132 45.3338)"
+                              fill="#3056D3"
+                              />
+                           <circle
+                              cx="132"
+                              cy="1.66683"
+                              r="1.66667"
+                              transform="rotate(-90 132 1.66683)"
+                              fill="#3056D3"
+                              />
+                        </svg>
+                     </span> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="w-full px-4 lg:w-1/2 xl:w-5/12 font-['Montserrat']">
+            <div class="mt-10 lg:mt-0">
+               <span class="block mb-4 text-lg font-semibold text-primary">
+               
+               </span>
+               <h2
+                  class="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]"
+                  >
+                  Who is Nyengeterai?</h2>
+               </h2>
+               <p class="mb-5 text-base text-body-color dark:text-dark-6">
+                 I am the CEO OF True Reflections,personal brand, an international transformational speaker, podcast host, a life coach. </span><br><br>
+&#x2192  <span>I have coached thousands of women ,youth and more. I share my message with various groups of people at live events.</span><br><br>
+&#x2192  <span> I am on a mission to shift mindsets and inspire action. I work with women and the youth from diverse backgrounds. </span><br><br>
+ &#x2192  <span> I am the founder of the I am Women's Conference in Zimbabwe.My vision is to touch lives by inspiring them and stimulating their inner core to achieve their dreams, attain their greatest potential, and live a meaningful life full of endless possibilities.</span><br><br>
+ &#x2192  <span>My purpose is to connect with the soul of my audience. I love people, connecting with the human spirit, touching the human soul, and inspiring people to bring out the best possibilities in them from within.
+               </p>
+               <p class="mb-8 text-base text-body-color dark:text-dark-6">
+                  A domain name is one of the first steps to establishing your
+                  brand. Secure a consistent brand image with a domain name that
+                  matches your business.
+               </p>
+               <a
+                  href="javascript:void(0)"
+                  class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+                  >
+               Get Started
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="bg-background text-primary-foreground py-16 px-4 md:px-8">
+  <div class="max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">📚 Exciting Announcement!</h2>
+        <p class="text-lg mb-4">I am thrilled to announce the upcoming release of my latest book, <span style="font-size: 20px; font-weight: 600" > Moments with God</span>. Stay tuned for more details!</p>
+        <button  style="color:#d6b93bd9" class="bg-black  py-2 px-4 rounded-lg hover:bg-primary/80 transition-colors duration-300">Pre-order Now</button>
+      </div>
+      <div>
+        <img src="./sd.jpg" alt="Book Cover" class="w-full h-auto rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== About Section End -->
+ <div id="Blog" class="h-screen w-screen "  style="background-color:#d6b93bd9">
+    <div class="mx-auto max-w-7xl pt-16 sm:pt-24">
+        <div class="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-12 lg:gap-8">
+            <div class="px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="space-y-2">
+                            <span
+                                class="rounded-full uppercase bg-pink-500 px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+                                Sneak Peak into Moments
+                            </span>
+                            <h1 class="text-4xl font-bold tracking-tight text-black sm:text-5xl md:text-5xl">
+                             
+                                <span
+                                    class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600">Becky K
+                                </span>
+                                <br>
+                              The importance of staying positive no matter what challenges come our way.
+                            </h1>
+                        </div>
+
+                        <p class="text-base text-black sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                           Join me as I have a talk with Miss Chindiya and discuss the importance of having a purpose and an impact in your lives.
+                        </p>
+
+                    </div>
+
+                    <div class="border-t border-gray-700"></div>
+<!-- 
+                    <div class="flex space-x-4 items-center text-white">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex flex-shrink-0 -space-x-1">
+                                <img loading="lazy" width="400" height="400" decoding="async"
+                                    class="h-6 w-6 max-w-none rounded-full ring-2 ring-white"
+                                    style="color:transparent" src="https://randomuser.me/api/portraits/men/29.jpg">
+                                <img loading="lazy" width="400" height="400" decoding="async"
+                                    class="h-6 w-6 max-w-none rounded-full ring-2 ring-white"
+                                    style="color:transparent" src="https://randomuser.me/api/portraits/men/90.jpg">
+                                <img loading="lazy" width="100" height="100" decoding="async"
+                                    class="h-6 w-6 max-w-none rounded-full ring-2 ring-white"
+                                    style="color:transparent" src="https://randomuser.me/api/portraits/men/75.jpg">
+                                <img loading="lazy" width="200" height="200" decoding="async"
+                                    class="h-6 w-6 max-w-none rounded-full ring-2 ring-white"
+                                    style="color:transparent" src="https://randomuser.me/api/portraits/men/5.jpg">
+                            </div>
+
+                            <span class="flex-shrink-0 text-xs font-medium leading-5">+15</span>
+
+                        </div>
+
+                        <div class="h-4 border-l border-gray-700"></div>
+
+                        <div class="flex items-center">
+
+                            <svg class="h-4 w-4 fill-current text-yellow-500" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z">
+                                </path>
+                            </svg>
+                            <svg class="h-4 w-4 fill-current text-yellow-500" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z">
+                                </path>
+                            </svg>
+                            <svg class="h-4 w-4 fill-current text-yellow-500" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z">
+                                </path>
+                            </svg>
+                            <svg class="h-4 w-4 fill-current text-yellow-500" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z">
+                                </path>
+                            </svg>
+                            <svg class="h-4 w-4 fill-current text-yellow-500" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="h-4 border-l border-gray-700"></div>
+                        <a href="" target="_blank">
+                            <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1&theme=light" class="w-32 h-8 md:w-48 md:h-12 lg:w-64 lg:h-16" width="250" height="54">
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+            
+
+            <div class="flex items-center w-full col-span-6">
+                <div class="px-6 h-96 lg:h-100% w-full max-w-2xl col-span-6 flex items-center mx-auto">
+                    <div style="width: 100%; height: 100%;">
+                        <div style="width: 100%; height: 100%;">
+                           <iframe width="560" height="315" src="https://www.youtube.com/embed/MOko-NoLdpY?si=0SYmvIqZvMUav1LP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ <div class=" px-4 py-16 min-h-screen ">
+  <!-- <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br to-purple-400 from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-indigo-600"></div>
+  </div> -->
+  <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+    <div class="mb-10 space-y-4 px-6 md:px-0">
+      <h2 class="text-center text-2xl font-bold text-black sm:text-3xl md:text-4xl">Masterclasses curated for you</h2>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <div style="background-color:#d6b93bd9"
+        class="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl  border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
+        <h2 class="text-lg sm:text-xl font-medium text-white mb-2">Masterclass</h2>
+        <p class="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
+          <!-- <span class="text-3xl sm:text-4xl font-bold text-white">$19</span> / Month -->
+        </p>
+        <ul class="list-none list-inside mb-6 text-center text-white">
+          <li class="font-bold text-orange text-2xl">TOTAL <br> TRANSFORMATION <br>MASTERCLASS <br> UNLEASH <br> THE <br> POWER <br> WITHIN</li>
+       
+          
+        </ul>
+       <button class="rounded bg-black"> <a target="_blank" rel="noopener noreferrer"
+          class="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          href="https://example.com/starter-plan"><span class="relative text-sm font-bold text-white">Join</span></a></button>
+      </div>
+      <div style="background-color: white"
+        class="flex flex-col items-center aspect-auto p-4 sm:p-8 border rounded-3xl bg-gray-800 border-gray-700 shadow-gray-600/10 shadow-none m-2 flex-1 max-w-md">
+        <h2 class="text-lg sm:text-xl font-medium text-black mb-2">Masterclass</h2>
+        <p class="text-lg sm:text-xl text-center mb-8 mt-4 text-gray-400">
+          <!-- <span class="text-3xl sm:text-4xl font-bold text-white">$49</span> / Month -->
+        </p>
+        <ul style="color:#d6b93bd9" class="list-none list-inside mb-6 text-center ">
+          <li class="font-bold text-2xl">ONE <br> ON <br> ONE <br> COACHING</li>
+         
+        </ul>
+      <BUTTON class="rounded bg-black">   <a target="_blank" rel="noopener noreferrer"
+          class="lemonsqueezy-button relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          href="https://example.com/pro-plan"><span class="relative text-sm font-semibold text-white">Get Started</span></a></BUTTON>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ <!-- ====== Blog Section Start -->
+<!-- <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark">
+   <div class="container mx-auto">
+      <div class="flex flex-wrap justify-center -mx-4">
+         <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+               <span class="block mb-2 text-lg font-semibold text-primary">
+               My Blog
+               </span>
+               <h2
+                  class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px] dark:text-white"
+                  >
+                  Our Recent News
+               </h2>
+               <p class="text-base text-body-color dark:text-dark-6">
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority have suffered alteration in some form.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="flex flex-wrap -mx-4">
+         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="w-full mb-10">
+               <div class="mb-8 overflow-hidden rounded">
+                  <img
+                     src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-01.jpg"
+                     alt="image"
+                     class="w-full"
+                     />
+               </div>
+               <div>
+                  <span
+                     class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary"
+                     >
+                  Dec 22, 2023
+                  </span>
+                  <h3>
+                     <a
+                        href="javascript:void(0)"
+                        class="inline-block mb-4 text-xl font-semibold text-dark dark:text-white hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                        >
+                     Meet AutoManage, the best AI management tools
+                     </a>
+                  </h3>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                     Lorem Ipsum is simply dummy text of the printing and
+                     typesetting industry.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="w-full mb-10">
+               <div class="mb-8 overflow-hidden rounded">
+                  <img
+                     src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-02.jpg"
+                     alt="image"
+                     class="w-full"
+                     />
+               </div>
+               <div>
+                  <span
+                     class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary"
+                     >
+                  Mar 15, 2023
+                  </span>
+                  <h3>
+                     <a
+                        href="javascript:void(0)"
+                        class="inline-block mb-4 text-xl font-semibold text-dark dark:text-white hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                        >
+                     How to earn more money as a wellness coach
+                     </a>
+                  </h3>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                     Lorem Ipsum is simply dummy text of the printing and
+                     typesetting industry.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="w-full mb-10">
+               <div class="mb-8 overflow-hidden rounded">
+                  <img
+                     src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-03.jpg"
+                     alt="image"
+                     class="w-full"
+                     />
+               </div>
+               <div>
+                  <span
+                     class="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary"
+                     >
+                  Jan 05, 2023
+                  </span>
+                  <h3>
+                     <a
+                        href="javascript:void(0)"
+                        class="inline-block mb-4 text-xl font-semibold text-dark dark:text-white hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                        >
+                     The no-fuss guide to upselling and cross selling
+                     </a>
+                  </h3>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                     Lorem Ipsum is simply dummy text of the printing and
+                     typesetting industry.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section> -->
+<!-- ====== Blog Section End -->
+<div class="bg-primary dark:bg-background text-primary-foreground dark:text-background p-8 md:p-16 flex flex-col md:flex-row items-center">
+  <div class="md:w-1/2 md:order-2">
+    <img src="./bannerpic.jpg" alt="Newsletter Image" class="w-full h-auto mb-4 md:mb-0 rounded-full" />
+  </div>
+  <div class="md:w-1/2 md:pl-8 md:order-1">
+   <p style="font-size:52px;line-height: 1.0; margin-bottom: 1rem;">Subscribe To  <i style="font-family:'Allura', cursive;font-weight:light">Moments With Nyengeterai  </i> </p>
+
+    <p class=" mb-6">JOIN ME ON AN EXCITING ADVENTURE AS I LAUNCH MY NEWSLETTER "MOMENTS WITH NYENGETERAI" YOU ASKED FOR IT I RESPONDED </p>
+    <div class="flex flex-col md:flex-row items-center">
+      
+      <button  style="color:rgb(214,185,59)"  class="bg-black dark:bg-accent-foreground dark:text-accent px-6 py-2 rounded-md"><a href="newsletter.html">Join Now</a></button>
+    </div>
+  </div>
+</div>
+
+<section class="body-font bg-white relative text-black">
+
+  <div class="container mx-auto px-5 py-24">
+    
+    <div class="mb-12 flex w-full flex-col text-center">
+      <h1 class="title-font mb-4 text-2xl font-medium text-black sm:text-3xl">Get in touch with me</h1>
+      <p class="mx-auto text-base leading-relaxed lg:w-2/3">Feel free to reach out to me! Whether you have a question,
+        feedback, or a collaboration proposal, I'd love to hear from you.
+      </p>
+    </div>
+
+    <div class="mx-auto md:w-2/3 lg:w-1/2">
+      <div class="-m-2 flex flex-wrap">
+
+        <!-- form -->
+        <div class="w-1/2 p-2">
+          <div class="relative">
+            <input type="text" id="name" name="name" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Name" />
+            <label for="name" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Name</label>
+          </div>
+        </div>
+        <div class="w-1/2 p-2">
+          <div class="relative">
+            <input type="email" id="email" name="email" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Email" />
+            <label for="email" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Email</label>
+          </div>
+        </div>
+        <div class="mt-4 w-full p-2">
+          <div class="relative">
+            <textarea id="message" name="message" class="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Message"></textarea>
+            <label for="message" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Message</label>
+          </div>
+        </div>
+        <div class="w-full p-2">
+          <button class="mx-auto flex rounded border-0 bg-black py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">Send</button>
+        </div>
+
+
+        <!-- footer -->
+        <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
+          <a class="text-indigo-400">hello@nyengeterai.com</a>
+          <p class="my-5 leading-normal">541 Matkovic St. <br />Borrowdale Brooke</p>
+           <h1 class="title-font mb-4 text-2xl font-medium text-black sm:text-3xl">Quick Links</h1>
+           <div class="flex w-full md:max-w-xl mx-4 rounded shadow justify-center">
+    <a  href="About" aria-current="false"
+        class="w-full flex justify-center font-medium rounded-l px-5 py-2 border bg-white text-gray-800 border-gray-200 hover:bg-gray-100">
+        About Me
+    </a>
+
+    <a href="#" aria-current="page"
+        class="w-full flex justify-center font-medium px-5 py-2 border-t border-b bg-gray-900 text-white  border-gray-900 hover:bg-gray-800">
+        My Books
+    </a>
+
+    <a href="#" aria-current="false"
+        class="w-full flex items-center gap-x-2 justify-center font-medium rounded-r px-5 py-2 border bg-white text-gray-800 border-gray-200 hover:bg-gray-100">
+        Blog
+        <!-- <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" -->
+            <!-- stroke="currentColor" aria-hidden="true"> -->
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z">
+            </path>
+        </svg>
+    </a>
+</div><br>
+           <div class="flex w-full md:max-w-xl mx-4 rounded shadow">
+    <a href="#" aria-current="false"
+        class="w-full flex justify-center font-medium rounded-l px-5 py-2 border bg-white text-gray-800 border-gray-200 hover:bg-gray-100">
+        Moments
+    </a>
+
+    <a href="#" aria-current="page"
+        class="w-full flex justify-center font-medium px-5 py-2 border-t border-b bg-gray-900 text-white  border-gray-900 hover:bg-gray-800">
+        Book A Class
+    </a>
+
+    <a href="#" aria-current="false"
+        class="w-full flex items-center gap-x-2 justify-center font-medium rounded-r px-5 py-2 border bg-white text-gray-800 border-gray-200 hover:bg-gray-100">
+        Questions
+        <!-- <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true"> -->
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z">
+            </path>
+        </svg>
+    </a>
+</div>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+
+
+<!-- 
+<div style="background-color:rgb(214,185,59);position:absolute;width:100%">
+<img style="margin-top:50px;margin-left:400px;" src="banner2.png"/>
+
+</div>
+<div  style="width:470px;position:relative;top:80px;left:40px;"><p style="font-size:58px;line-height: 1.0; ">Your Next Level of Transformation Starts Here</p>
+<p style="font-size:20px;margin-left:5px;line-height: 1.0;" >Unlock your potential below</p><div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-hide-small w3-hide-large">
+  <div style="background-color:black ;height:60px;"   class="w3-row"></div>
+<div style="background-color:rgba((214,185,59);position:absolute;width:100%">
+<img width="80%;"style="margin-top:-50px;" src="banner2.png"/>
+
+</div>
+<div  style="width:240px;position:relative;top:80px;left:23px;"><p style="font-size:26px;line-height: 1.0; ">Your Next Level of Transformation Starts Here</p>
+<p style="font-size:13px;margin-left:0px;margin-top:-20px;line-height: 1.0;" >Unlock your potential below</p><div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="w3-hide-small w3-hide-large w3-padding" style="padding:150px;height:625px;background-color:white;">
+<ol style="padding-left:40px;">
+
+<li style="font-size:32px;margin-top:0px;"><p style="border-bottom:black solid 1px;font-size:30px;width:380px;padding:20px;"> Enroll Into A Training <a style="  margin-top:-40px;float: right;height:40px;width:40px;margin-left:154px;Display:inline;padding-top:-6px;padding-left:14px;padding-right:0px;padding-bottom:-4px;text-align:center"><img src="2.png"/> </a></p></li>
+<li style="font-size:32px;"><p style="border-bottom:black solid 1px;font-size:30px;width:500px;width:380px;padding:20px;"> Pre Apply For Coaching <a style=" margin-top:-40px; float: right;height:40px;width:40px;margin-left:39px;Display:inline;padding-top:-6px;padding-left:14px;padding-right:0px;padding-bottom:-4px;"><img src="2.png"/></a></p></li>
+<li style="font-size:32px;"><p style="border-bottom:black solid 1px;font-size:30px;width:500px;width:380px;padding:20px; ">Moments With Nyengeterai<a style=" margin-top:-40px; float: right;height:40px;width:40px;margin-left:142px;Display:inline;padding-top:-6px;padding-left:14px;padding-right:0px;padding-bottom:-4px;"><img src="2.png"/></a> </p></li>
+<li style="font-size:32px;"><p style="border-bottom:black solid 1px;font-size:30px;width:500px;width:380px;padding:20px; ">  Join Our Newsletter  <a style=" margin-top:-40px;  float: right;height:40px;width:40px;margin-left:40px;Display:inline;padding-left:14px;padding-top:14px; padding-right:0px;padding-bottom:0px;"><img src="2.png"/></a></p></li>
+
+
+
+
+</ol></div>
+</div>
+
+<bR>
+<div style="margin-top:360px;height:900px;background-color:rgb(242,237,211);" class="w3-hide-small w3-hide-medium">
+
+<br>
+<br>
+<center><h1  style="color:black;">QUICK LINKS</h1></center>
+<center><h1 style="font-size:60px;color:black;font-weight:light;">Ready To Get Started ?</h1></center>
+
+<div class="w3-third" style="background-color:rgb(242,237,211);padding:30px;padding-left:120px;padding-right:0px;padding-bottom:82px;">
+<img width="90%;"style="margin-top:0px;margin:40px;background-color:rgb(214,185,59);" src="ban2.jpg"/>
+
+</div>
+<div class="w3-twothird w3-padding" style="padding:300px;height:625px;background-color:rgb(242,237,211);">
+<ol style="padding-left:160px;font-family: 'Nanum Myeongjo', serif;">
+
+<li style="font-size:32px;margin-top:0px;"><p style="border-bottom:black solid 1px;font-size:30px;width:530px;padding:20px;"> Enroll Into A Training <a style="  float: right;height:40px;width:40px;margin-left:154px;Display:inline;padding-top:-6px;padding-left:14px;padding-right:0px;padding-bottom:-4px;text-align:center"><img src="3.png"/></a></p></li>
+<li style="font-size:32px;"><p style="border-bottom:black solid 1px;font-size:30px;width:500px;width:530px;padding:20px;"> Pre Apply For Coaching  <a style="  float: right;height:40px;width:40px;margin-left:39px;Display:inline;padding-top:-6px;padding-left:14px;padding-right:0px;padding-bottom:-4px;"><img src="3.png"/></a></p></li>
+<li style="font-size:32px;"><p style="border-bottom:black solid 1px;font-size:30px;width:500px;width:530px;padding:20px;; ">Moments With Nyengeterai<a style="  float: right;height:40px;width:40px;margin-left:42px;Display:inline;padding-top:-6px;padding-left:14px;padding-right:0px;padding-bottom:-4px;"><img src="3.png"/></a> </p></li>
+<li style="font-size:32px;"><p style="border-bottom:black solid 1px;font-size:30px;width:500px;width:530px;padding:20px; "> Join Our Newsletter  <a style="   float: right;height:40px;width:40px;margin-left:40px;Display:inline;padding-left:14px;padding-top:-6px; padding-right:0px;padding-bottom:-2px;"><img src="3.png"/></a></p></li>
+
+
+
+
+</ol></div>
+</div>
+
+<div class='w3-hide-small w3-hide-medium' style="background-image:url(bg1.png);background-attachment:fixed;height:800px;width:100%;padding:100px;padding-left:210px;padding-right:210px;">
+
+<div style="background-color:white;border-radius:30px;height:650px;width:100%;">
+<br><br>
+<center>
+<p > MASTERCLASSES CURATED</p><p> FOR YOU<p>
+</center>
+
+<div style="padding:80px;padding-top:10px;" >
+<div class="w3-half "style="" >
+
+<div class="" style="border :solid 1px black;margin:25px;height:400px;border-radius:10px;"><br>
+<p style="font-size:30px;padding-top:0px;text-align:center;padding:0px;padding-left:40px;padding-right:40px;margin-top:10px;">TOTAL TRANSFORMATION CLASS UNLEASHING THE POWER WITHIN</p><p style="text-align:center;margin-top:-20px">MASTERCLASS</p>
+
+<button style="background-color:rgb(214,185,59); margin-top:26px;margin-left:60px;width:65%;height:20px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:10px;padding-bottom:32px;">JOIN</button>
+</div>
+</div>
+<div class="w3-half "style="" >
+
+<div class="" style="border :solid 1px black;height:400px;margin:25px;border-radius:10px;">
+<p style="font-size:45px;padding-top:0px;text-align:center;padding:0px;padding-left:40px;padding-right:40px;margin-top:10px;"><SPAN>1 </p><p style="text-align:center;margin-top:-20px"></p>
+<p style="font-size:30px;padding-top:0px;text-align:center;padding:0px;padding-left:40px;padding-right:40px;margin-top:10px;"><SPAN> ON</p><p style="text-align:center;margin-top:-20px"></p>
+<p style="font-size:45px;padding-top:0px;text-align:center;padding:0px;padding-left:40px;padding-right:40px;margin-top:10px;"><SPAN>1 </p><p style="text-align:center;margin-top:-20px"></p>
+<p style="font-size:30px;padding-top:0px;text-align:center;padding:0px;padding-left:40px;padding-right:40px;margin-top:10px;"><SPAN>COACHING </p><p style="text-align:center;margin-top:-20px"></p>
+
+<button style="background-color:rgb(214,185,59);margin-top:68px;margin-left:60px;width:65%;height:20px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:10px;padding-bottom:32px;">BOOK</button>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w3">
+<div class="containerr">
+        <h2>Post</h2>
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU3fHx0ZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Sagar Developer</span>
+                    <span>Nov 12 2021</span>
+                </div>
+                <h1 class="blog-post_title">Lorem ipsum dolor sit amet.</h1>
+                <p class="blog-post_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a, tempore veniam quasi sint fugiat
+                    facilis, facere, amet magnam optio velit. Laudantium et temporibus soluta, esse cupiditate aliquid
+                    dicta
+                    accusantium.
+                </p>
+                <a href="#" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-post_img">
+                <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="blog-post_info">
+                <div class="blog-post_date">
+                    <span>Sagar Developer</span>
+                    <span>Dec 25 2021</span>
+                </div>
+                <h1 class="blog-post_title">Lorem ipsum dolor sit amet.</h1>
+                <p class="blog-post_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a, tempore veniam quasi sint fugiat
+                    facilis, facere, amet magnam optio velit. Laudantium et temporibus soluta, esse cupiditate aliquid
+                    dicta
+                    accusantium.
+                </p>
+                <a href="#" class="blog-post_cta">Read More</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="w3-row w3-hide-small w3-hide-medium" style="background-color:rgb(242,237,211);">
+<div class="w3-twothird "style="padding-left:210px;" >
+
+
+<p style="font-size:80px;  line-height: 1.6;;padding-bottom:0px;">Who is </p><p style="margin-bottom:5rem;font-size:80px;line-height: 0;">Nyengeterai</p>
+<div style="width:400px;" >
+&#x2192 <span  >I am the CEO of True Reflections and the founder of   I AM Women’s Conference, I am an award-winning global brand strategist, and a personal branding expert. With over  20 years of experience in the corporate world, I have held senior roles in marketing, branding, and communications with both local and multinational companies. I am a certified transformational life coach, Reinvetion  strategist, author and podcaster. </span><br><br>
+&#x2192  <span>I have coached thousands of women ,youth and more. I share my message with various groups of people at live events.</span><br><br>
+&#x2192  <span> I am on a mission to shift mindsets and inspire action. I work with women and the youth from diverse backgrounds. </span><br><br>
+ &#x2192  <span> I am the founder of the I am Women's Conference in Zimbabwe.My vision is to touch lives by inspiring them and stimulating their inner core to achieve their dreams, attain their greatest potential, and live a meaningful life full of endless possibilities.</span><br><br>
+ 
+  &#x2192  <span>I believe life is about living one’s purpose with limitless possibilities. I am obsessed with unlocking greatness in people, helping individuals to unleash their brilliance, and live life with purpose and passion.  That means serving the world in a way only you can and growing from the challenges, opportunities, and relationships that come your way. I also believe in second chances and I am grateful for mine. It led to my professional calling and who I am today. I have the privilege of working with and growing together with my clients. I believe we have the power to make anything happen, I want to make an impact changing people’s lives one person, one story, one lesson at a time to ensure that you are simply the best at being YOU!</span><br><br>
+ 
+ <span><span><br><br>
+<button style="background-color:rgb(214,185,59);height:20px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:10px;padding-bottom:32px;">Learn More Here</button>
+<br><br>
+</div>
+</div>
+
+
+
+
+<div class="w3-third "style="padding-right:80px;padding-top:200px;margin-left:0px;" >
+ <img class="mySlides1 " src="a.jpg" style="border-radius:20px;border:solid black 2px; width:100%">
+  <img class="mySlides1 " src="b.jpg" style="border-radius:20px;border:solid black 2px; width:100%">
+  <img class="mySlides1 " src="c.jpg" style="border-radius:20px;border:solid black 2px;width:100%">
+  <img class="mySlides1 " src="d.jpg" style="border-radius:20px;border:solid black 2px; width:100%">
+</div>
+
+
+
+</div> -->
+<!-- <script>
+var slideIndex1 = 0;
+carousel1();
+
+function carousel1() {
+  var i1;
+  var x1 = document.getElementsByClassName("mySlides1");
+  for (i1 = 0; i1 < x1.length; i1++) {
+    x1[i1].style.display = "none";
+  }
+  slideIndex1++;
+  if (slideIndex1 > x1.length) {slideIndex1 = 1}
+  x1[slideIndex1-1].style.display = "block";
+  setTimeout(carousel1, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div  class="w3-hide-small w3-hide-medium" style="background-image:url(bg1.png);background-attachment:fixed;height:800px;width:100%;padding:100px;padding-left:210px;padding-right:210px;">
+</div>
+
+<div>
+</div>
+<div class='w3-hide-small w3-hide-medium' style="background-color:rgb(242,237,211);height:800px;width:100%;padding:100px;padding-left:210px;padding-right:210px;">
+
+<div class="w3-hide-small w3-hide-medium" style="background-color:rgb(255,255,255);border-radius:30px;height:650px;width:100%;box-shadow: 10px 10px 8px 10px #888888;">
+
+
+<div class="w3-twothird " style="padding:100px;" >
+<p style="font-size:30px;  line-height: 1.6;margin-bottom:0px;padding-bottom:0px;color:rgb(214,185,59))">Moments</p><p style="margin-top:0px;font-size:30px;line-height: 1.2;color:rgb(214,185,59)">Of Inspiration</p>
+<p style="font-size:42px;  line-height: 1.5;margin-bottom:0px;padding-bottom:0px;"></p><p style="margin-top:0px;font-size:42px;line-height: 0.8;">Coming Soon</p>
+<p style="margin-top:-20px;font-size:12px;line-height: 1.6;" > </p>
+<br><br><br><button style="background-color:rgb(214,185,59);margin-top:0px;width:45%;height:10px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:4px;padding-bottom:26px;">The Book</button>
+
+</div>
+<div class="w3-third "style="box-shadow: 10px 10px 8px 10px #888888; border-top-right-radius:30px; border-bottom-right-radius:30px;height:650px;" >
+<center><img style="margin-top:190px;opacity:1; box-shadow: 0 6px 2px -2px BLACK;" width="35%" src="sd.jpg"/></center>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<div class="w3-hide-small w3-hide-medium"  style="padding-left:20%;padding-right:20%;">
+<center>
+<p style="font-size:52px;line-height: 1.0;">Subscribe To  <i style="font-family:'Allura', cursive;font-weight:light">Moments With </i> </p>
+<p style="font-size:52px;line-height: 0;" ><span style="font-family:'Allura', cursive;">Nyengeterai </span>NEWSLETTER</p>
+<br>
+</center>
+<div class="w3-row">
+<div class="w3-half "style="" >
+<img width="80%" src="new.jpg" />
+</div>
+<div class="w3-half "style="padding:50px" >
+<br><br><br>
+<p style="margin-top:-20px;font-size:14px;line-height: 1.6;" >JOIN ME ON AN EXCITING ADVENTURE AS I LAUNCH MY NEWSLETTER "MOMENTS WITH NYENGETERAI" YOU ASKED FOR IT I RESPONDED </p>
+<br><br><br><button  onclick="location.href='newsletter.html'" style="background-color:rgb(220,216,200);margin-top:0px;width:45%;height:10px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:4px;padding-bottom:26px;">JOIN HERE</button>
+
+</div>
+</div>
+
+</div>
+<br>
+
+<div  class="w3-hide-small w3-hide-medium" style="background-color:rgb(242,237,211);height:800px;width:100%;padding:100px;padding-left:210px;padding-right:210px;">
+
+<div style="background-color:rgb(255,255,255);border-radius:30px;height:650px;width:100%;box-shadow: 10px 10px 8px 10px #888888;">
+
+
+<div class="w3-twothird " style="padding:100px;" >
+<p style="font-size:30px;  line-height: 1.6;margin-bottom:0px;padding-bottom:0px;color:rgb(214,185,59)">Moments</p><p style="margin-top:0px;font-size:30px;line-height: 1.2;color:">With Nyengeterai</p>
+<p style="font-size:42px;  line-height: 1.5;margin-bottom:0px;padding-bottom:0px;"> </p><p style="margin-top:0px;font-size:42px;line-height: 0.8;"></p>
+<p style="margin-top:-20px;font-size:12px;line-height: 1.6;" ><img src="m.png"/> </p>
+<br><br><br><button onclick="location.href='https://www.youtube.com/watch?v=MOko-NoLdpY&t=103s'" style="background-color:rgb(214,185,59);margin-top:0px;width:45%;height:10px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:4px;padding-bottom:26px;">Watch Video</button>
+
+</div>
+<div class="w3-third "style="box-shadow: 10px 10px 8px 10px #888888; border-top-right-radius:30px; border-bottom-right-radius:30px;height:650px;" >
+<center><img style="margin-top:290px;opacity:1; " width="45%" src="p.png"/></center>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="w3-hide-small w3-hide-medium" style="background-image:url(bg1.png);background-attachment:fixed;height:800px;width:100%;padding:100px;padding-left:210px;padding-right:210px;">
+</div>
+
+
+<div>
+</div>
+ -->
+
+<div class="w3-row w3-hide-small w3-hide-medium" style="fontheight:300px;background-color:rgb(220,216,200);">
+<br><br><center>
+<p style="font-family:'Abhaya Libre', serif;font-size:30px;line-height: 1.5">NYENGETERAI</p>
+<img src="1.png"/>
+</center></div>
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-hide-large w3-hide-medium">
+
+<div style="padding:15px;margin-top:-90px;background-color:rgb(249,229,211);"><br><p style="font-size:35px;font-family: 'Nanum Myeongjo', serif;line-height: 1.0; ">Your Next Level of Transformation Starts Here </p>
+<p style="font-family:'Mingzat', sans-serif;font-size:15px;margin-top:-30px;line-height: 1.0;letter-spacing: -1px;">Unlock your potential below</p>
+<img style="width:100%;" src="banner2.png"/>
+
+</div>
+
+</div>
+
+<div class="w3-hide-large w3-hide-medium" style="height:270px;background-color:rgb(242,237,211);">
+<img width="50%;"style="float:left" src="ban2.jpg"/><br>
+<div style="width:50%;float:right;height:270px;padding-left:15px;">
+<p style="color:black;font-family:'Rethink Sans', sans-serif;">QUICK LINKS</p>
+<h1 style="font-size:45px;color:black;font-family: 'Abhaya Libre', serif; line-height: 0.6;">Ready </h1>
+<h1 style="font-size:45px;color:black;font-family: 'Abhaya Libre', serif; line-height: 0.6;"> To Get</h1>
+<h1 style="font-size:45px;color:black;font-family: 'Abhaya Libre', serif; line-height: 0.6;"> Started ?</h1>
+
+
+</div>
+</div>
+<div class='w3-hide-large w3-hide-medium' style="background-image:url(bg1.png);background-attachment:fixed;height:800px;padding:30px;margin-top:-11px;padding-left:10px;padding-right:10px;">
+<br><br>
+<div style="background-color:white;border-radius:30px;height:650px;width:100%;">
+<br><br>
+<center>
+<p>3 MASTERCLASSES CURATED</p><p> FOR YOU<p>
+</center>
+
+<div style="padding:0px;padding-top:10px;" >
+<div class="w3-half "style="" >
+
+<div class="" style="border :solid 1px black;margin:25px;height:400px;border-radius:10px;"><br><br><br><br>
+<p style="font-size:27px;padding-top:0px;text-align:center;padding:0px;padding-left:40px;padding-right:40px;margin-top:-20px;font-family:'Playfair Display', serif;">TOTAL TRANSFORMATION CLASS UNLEASHING THE POWER WITHIN</p><p style="text-align:center;margin-top:-20px">MASTERCLASS</p>
+
+<button style="background-color:rgb(214,185,59); margin-top:60px;margin-left:60px;width:65%;height:20px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:10px;padding-bottom:32px;">JOIN</button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="w3-row w3-hide-large w3-hide-medium" style="background-color:;">
+<div class=""style="padding:30px;" >
+
+
+<p style="font-size:60px;  line-height: 1.6;margin-bottom:0px;padding-bottom:0px;font-family: 'Abhaya Libre', serif">Who is </p><p style="margin-top:0px;font-size:60px;line-height: 0;font-family: 'Abhaya Libre', serif">Nyengeterai</p>
+<div style="font-family:'Space Grotesk', sans-serif" >
+&#x2192 <span  > I am the CEO OF True Reflections,personal brand, an international transformational speaker, podcast host, a life coach. </span><br><br>
+&#x2192  <span>I have coached thousands of women ,youth and more. I share my message with various groups of people at live events.</span><br><br>
+&#x2192  <span> I am on a mission to shift mindsets and inspire action. I work with women and the youth from diverse backgrounds. </span><br><br>
+ &#x2192  <span> I am the founder of the I am Women's Conference in Zimbabwe.My vision is to touch lives by inspiring them and stimulating their inner core to achieve their dreams, attain their greatest potential, and live a meaningful life full of endless possibilities.</span><br><br>
+ &#x2192  <span>My purpose is to connect with the soul of my audience. I love people, connecting with the human spirit, touching the human soul, and inspiring people to bring out the best possibilities in them from within.</span><br><br>
+ <span><span><br><br>
+</div>
+</div>
+
+<br>
+
+
+<div class="w3-row " style="padding:50px;" >
+ <img class="mySlides " src="a.jpg" style="border-radius:20px;border:solid black 2px; width:100%">
+  <img class="mySlides " src="b.jpg" style="border-radius:20px;border:solid black 2px; width:100%">
+  <img class="mySlides " src="e.jpg" style="border-radius:20px;border:solid black 2px;width:100%">
+  <img class="mySlides " src="f.jpg" style="border-radius:20px;border:solid black 2px; width:100%">
+</div>
+<center>
+<button style="background-color:rgb(214,185,59);height:20px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:10px;padding-bottom:32px;">Learn More Here</button>
+</center>
+<br><br>
+</div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="w3-hide-large w3-hide-medium" style="background-color:rgb(234,234,234);padding:5%;"><br>
+<div class="w3-hide-large w3-hide-medium"  style="background-color:white;padding:10%">
+<center>
+<p style="font-size:22px;line-height: 1.0;font-family:'Abhaya Libre', serif">SUBSCRIBE TO MOMENTS WITH NYENGETERAI</p>
+<p style="font-size:22px;line-height: 0;font-family 'Abhaya Libre', serif" >  NEWSLETTER</p>
+<br>
+</center>
+<div class="w3-row">
+<div class="w3-half "style="padding:0%" >
+<img width="100%" src="newsletter.jpg" />
+</div>
+<div class="w3-half "style="padding:0px" >
+<br><br>
+<p style="margin-top:0px;font-size:12px;line-height: 1.6;" >JOIN ME ON AN EXCITING ADVENTURE AS I LAUNCH MY NEWSLETTER "MOMENTS WITH NYENGETERAI" YOU ASKED FOR IT I RESPONDED </p>
+<br><center><button onclick="location.href='newsletter.html'" style="background-color:rgb(214,185,59);margin-top:0px;width:55%;height:10px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:4px;padding-bottom:26px;">JOIN HERE</button>
+</center>
+</div>
+</div>
+
+</div><br>
+</div>
+<div  class="w3-hide-large w3-hide-medium" style="background-color:white;padding:30px;">
+<br>
+<div style="background-color:rgb(255,255,255);border-radius:30px;height:650px;width:100%;box-shadow: 10px 10px 8px 10px #888888;padding:0px;">
+<div style="border-top-right-radius:30px;border-top-left-radius:30px;height:300px;background-image:url('ban1.jpg')"></div>
+<div class=" " style="padding:20px;" >
+<p style="font-size:30px;  line-height: 1.6;margin-bottom:0px;padding-bottom:0px;">Moments </p><p style="margin-top:0px;font-size:30px;line-height: 1.2;">With nyengeterai</p>
+<p style="font-size:12px;  line-height: 1.5;margin-bottom:0px;padding-bottom:0px;"></p><p style="margin-top:0px;font-size:12px;line-height: 0.8;"></p><br>
+
+<p style="margin-top:-20px;font-size:12px;line-height: 1.6;" ></p>
+<br> <button onclick="location.href='https://www.youtube.com/watch?v=MOko-NoLdpY&t=103s'" style="background-color:rgb(214,185,59);margin-top:0px;width:55%;height:10px;border:solid black 1px;padding:20px;border-radius:20px;padding-top:4px;padding-bottom:26px;">Watch Video</button>
+<br><br>
+</div>
+<br>
+</div><br>
+</div>
+
+
+
+<div class="w3-hide-large w3-hide-medium" style="background-image:url(bg1.png);background-attachment:fixed;height:800px;">
+</div> -->
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<script>
+    // Get all navigation links
+const navLinks = document.querySelectorAll('nav a');
+
+// Add a click event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    const targetId = link.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
+<script>
+ const menuToggle = document.getElementById('menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavClose = document.querySelector('.mobile-nav-close');
+const mobileNavLinks   
+ = document.querySelectorAll('.mobile-nav-list a');
+menuToggle.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
+mobileNavClose.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+});
+
+// Close the mobile navigation when a link is clicked
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+});
+
+</script>
+<script>
+  const nav = document.getElementById('main-nav');
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', function() {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      // User scrolled up
+      nav.classList.remove('hidden');
+    } else {
+      // User scrolled down
+      nav.classList.add('hidden');
+    }
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+</body>

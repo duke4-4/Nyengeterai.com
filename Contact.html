@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momemnts | Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        #contact-form {
+            display: none;
+        }
+
+        #powered-by {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: #666;
+            font-size: 12px;
+            z-index: 1000;
+        }
+
+        #open-popup-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #open-popup-btn i {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white">
+    <!-- responsive header with a navbar and logo to the left -->
+     <header class="bg-gray-800 shadow-md w-full h-16 p-4">
+        <div class="sm:px-6">
+    <div class="relative  pb-16 sm:pb-24">
+        <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+            <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="#"><span class="sr-only">Company Name</span>
+                        <img class="w-auto h-8 sm:h-10" src="https://www.svgrepo.com/show/448244/pack.svg" loading="lazy" width="202" height="40">
+                    </a>
+                    <div class="flex items-center -mr-2 md:hidden">
+                        <button class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"  type="button" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex md:space-x-10 list-none">
+                <li>
+                    <a href="#" class="text-base  font-normal text-white list-none hover:text-gray-900"
+                        target="">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="text-base font-normal text-white list-none hover:text-gray-900"
+                        target="">About
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-base font-normal text-white list-none hover:text-gray-900"
+                        target="_blank">Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-base font-normal text-white list-none hover:text-gray-900"
+                        target="_blank">Contact
+                    </a>
+                </li>
+            </div>
+            <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+                <div class="inline-flex rounded-full shadow">
+                    <div href="#"
+                        class="inline-flex items-center px-4 py-2 text-base text-gray-900 bg-white border border-transparent rounded-full cursor-pointer font-base hover:bg-gray-50 ">
+                        get in touch
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+     </header>
+
+<div id="contact-form" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded shadow-lg">
+    <button id="close-btn" class="text-gray-700 hover:text-red-600 font-bold text-xl absolute top-2 right-2" onclick="closeForm()">X</button>
+    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+<form action="https://fabform.io/f/{form-id}" method="post" class="space-y-4">
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-600">Name:</label>
+            <input type="text" id="name" name="name" required
+                   class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-600">Email:</label>
+            <input type="email" id="email" name="email" required
+                   class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+            <label for="message" class="block text-sm font-medium text-gray-600">Message:</label>
+            <textarea id="message" name="message" rows="4" required
+                      class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Submit
+        </button>
+    </form>
+  <a href="https://fabform.io" target="_blank" id="powered-by" class="text-gray-700 hover:text-blue-500">
+    Powered By FabForm.io
+</a>
+</div>
+
+
+
+<button id="open-popup-btn">
+    <i id="popup-icon" class="fas fa-comment"></i>
+</button>
+
+<script>
+    const openPopupBtn = document.getElementById('open-popup-btn');
+    const contactForm = document.getElementById('contact-form');
+    const popupIcon = document.getElementById('popup-icon');
+
+    openPopupBtn.addEventListener('click', function () {
+        if (contactForm.style.display === 'block') {
+            contactForm.style.display = 'none';
+            popupIcon.classList.remove('fa-comment');
+            popupIcon.classList.add('fa-comment-alt');
+        } else {
+            contactForm.style.display = 'block';
+            popupIcon.classList.remove('fa-comment-alt');
+            popupIcon.classList.add('fa-comment');
+        }
+    });
+
+    function closeForm() {
+        contactForm.style.display = 'none';
+        popupIcon.classList.remove('fa-comment');
+        popupIcon.classList.add('fa-comment-alt');
+    }
+
+    contactForm.addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeForm();
+        }
+    });
+</script>
+
+    
+</body>
+
+</html>

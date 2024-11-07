@@ -1,0 +1,22 @@
+[14-Oct-2024 15:30:36 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home4/provide7/nyengeterai.com/insert.php:8
+Stack trace:
+#0 /home4/provide7/nyengeterai.com/insert.php(8): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'a')
+#1 {main}
+  thrown in /home4/provide7/nyengeterai.com/insert.php on line 8
+[14-Oct-2024 15:30:46 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home4/provide7/nyengeterai.com/insert.php:8
+Stack trace:
+#0 /home4/provide7/nyengeterai.com/insert.php(8): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'a')
+#1 {main}
+  thrown in /home4/provide7/nyengeterai.com/insert.php on line 8
+[21-Oct-2024 02:45:52 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home4/provide7/nyengeterai.com/insert.php:8
+Stack trace:
+#0 /home4/provide7/nyengeterai.com/insert.php(8): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'a')
+#1 {main}
+  thrown in /home4/provide7/nyengeterai.com/insert.php on line 8
+[21-Oct-2024 02:48:55 America/Chicago] PHP Warning:  Undefined array key "email" in /home4/provide7/nyengeterai.com/insert.php on line 3
+[21-Oct-2024 02:48:55 America/Chicago] PHP Warning:  Undefined array key "phone" in /home4/provide7/nyengeterai.com/insert.php on line 4
+[21-Oct-2024 02:48:55 America/Chicago] PHP Warning:  Undefined array key "first" in /home4/provide7/nyengeterai.com/insert.php on line 5
+[05-Nov-2024 10:14:13 America/Chicago] PHP Warning:  Undefined array key "email" in /home4/provide7/nyengeterai.com/insert.php on line 3
+[05-Nov-2024 10:14:13 America/Chicago] PHP Warning:  Undefined array key "phone" in /home4/provide7/nyengeterai.com/insert.php on line 4
+[05-Nov-2024 10:14:13 America/Chicago] PHP Warning:  Undefined array key "first" in /home4/provide7/nyengeterai.com/insert.php on line 5
+[05-Nov-2024 10:14:13 America/Chicago] PHP Warning:  Undefined array key "second" in /home4/provide7/nyengeterai.com/insert.php on line 6
