@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preorder the Book</title>
+    <link rel="stylesheet" href="w3.css">
+        <link rel="icon" type="image/png" href="fav.png">
+        <link rel="icon" type="image/png" href="fav.png">
+
+  <link rel="stylesheet" href="index.css"> 
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Arizonia&family=Bubblegum+Sans&family=Capriola&family=Cinzel&family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Gloria+Hallelujah&family=Gochi+Hand&family=Knewave&family=Mingzat&family=Nanum+Myeongjo:wght@400;700&family=Neuton&family=Oleo+Script&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Arizonia&family=Bubblegum+Sans&family=Capriola&family=Cinzel&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond&family=Gloria+Hallelujah&family=Gochi+Hand&family=Knewave&family=Mingzat&family=Nanum+Myeongjo:wght@400;700;800&family=Neuton&family=Oleo+Script&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body style="margin:0px;padding:0px; font-family: 'Montserrat" class="font-['Montserrat']">
+
+    
+<div class=" w3-hide-medium">
+    
+  <!-- <div style="background-color:black ;height:55px" class="w3-row">
+</div> -->
+<div >
+<nav class="bg-black shadow-lg fixed hidden w-full z-50" id="main-nav">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <img src="./log.png" alt="logo" class="h-12" />
+      </div>
+      <div class="hidden md:flex" id="main-nav">
+        <a href="/index.html" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Home</a>
+        <a href="#About" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">About</a>
+        <a href="/preorder.html" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Books</a>
+        <a href="#Blog" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Blog</a>
+        <a href="#" class="text-white hover:text-primary-700 px-3 py-2 rounded-md text-2xl">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-white hover:text-primary-700 focus:outline-none" id="menu-toggle">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-nav">
+   <ul class="mobile-nav-list">
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="/index.html" class=" hover:text-white px-3 py-2 rounded-md text-2xl active">Home</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#About" class=" hover:text-white px-3 py-2 rounded-md text-2xl">About</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="/preorder.html" class=" hover:text-white px-3 py-2 rounded-md text-2xl">Books</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#Blog" class=" hover:text-white px-3 py-2 rounded-md text-2xl">Blog</a>
+  </li>
+  <li class="mobile-nav-item">
+    <a  style="color:rgb(251 146 60)" href="#Contact" class=" hover:text-white px-3 py-2 rounded-md text-2xl">Contact</a>
+  </li>
+</ul>
+    <button class="mobile-nav-close">✕</button>
+  </div>
+</nav>
+<div class="relative border-t  ">
+    <div class="absolute inset-0 h-36 opacity-90 lg:h-48"
+       >
+    </div>
+    <div class="relative mx-auto max-w-7xl px-6 pt-16  sm:px-12 lg:pt-24">
+        <header class="mx-auto max-w-2xl text-center">
+            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Browse Through My Books</h1>
+            <p class="mt-2 text-sm text-xl font-semibold text-black">
+               Dive into my personal collection of books, each crafted with passion and purpose. Explore stories, insights, and ideas that I’ve poured my heart into. I hope you enjoy reading them as much as I enjoyed writing them!
+            </p>
+        </header>
+    </div>
+</div><section class="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0">
+    <section class="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1">
+        <img class="xl:max-w-6xl" src="./Website Mockups-02.png" alt="">
+        <div class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5">
+            <div class="flex justify-between font-bold text-sm">
+                <p>Book Synopsis</p>
+                <p class="text-gray-400">To be Published</p>
+            </div>
+            <h2 class="text-3xl font-semibold mt-4 md:mt-10" style="font-family: cursive;">Moments with God</h2>
+
+            <p class="my-3 text-justify font-medium text-gray-700 leading-relaxed">Book synopsis will go here. This is dummy text to fill in the gap while I wait for A proper substitution that will go here. Meantime, this should do the trick.</p>
+
+            <!-- Pre-order Button -->
+            <button id="preOrderBtn" style="color:#d6b93bd9" class="bg-black py-2 px-4 rounded-lg hover:bg-primary/80 transition-colors duration-300">
+                Pre-order Now
+            </button>
+        </div>
+    </section>
+</section>
+
+<!-- Modal Structure -->
+<div id="preOrderModal" class="modal hidden fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
+    <div class="modal-content bg-white p-8 rounded-lg w-96">
+        <span id="closeBtn" class="absolute top-2 right-2 text-xl cursor-pointer">&times;</span>
+        <h3 class="text-xl font-semibold mb-4">Pre-order Your Book</h3>
+        <form id="preOrderForm">
+            <label for="name" class="block text-sm font-medium mb-2">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full p-2 mb-4 border border-gray-300 rounded" placeholder="Your Name" required>
+
+            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full p-2 mb-4 border border-gray-300 rounded" placeholder="Your Email" required>
+
+            <label for="quantity" class="block text-sm font-medium mb-2">Quantity</label>
+            <input type="number" id="quantity" name="quantity" class="w-full p-2 mb-4 border border-gray-300 rounded" placeholder="How many copies?" required>
+
+            <button type="submit" style="color:#d6b93bd9" class="bg-black text-white py-2 px-4 rounded-lg w-full">Submit Pre-order</button>
+        </form>
+    </div>
+</div>
+<div id="thankYouModal" class="modal hidden fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
+    <div class="modal-content bg-white p-8 rounded-lg w-96">
+        <span id="closeThankYouBtn" class="absolute top-2 right-2 text-xl cursor-pointer">&times;</span>
+        <h3 class="text-xl font-semibold mb-4">Thank You for Your Support!</h3>
+        <p class="text-lg">Hope you enjoy my book! Your pre-order has been received.</p>
+    </div>
+</div>
+
+</div>
+<section class="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0">
+    <section class="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 ">
+        <img class="xl:max-w-6xl" src="./Website Mockups-02.png" alt="">
+        <div class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5">
+            <div class="flex justify-between font-bold text-sm">
+                <p>Book Synopsis</p>
+                <p class="text-gray-400">To be Published</p>
+            </div>
+           <h2 class="text-3xl font-semibold mt-4 md:mt-10" style="font-family: cursive;">Moments of Inspiration</h2>
+
+            <p class="my-3 text-justify font-medium text-gray-700 leading-relaxed">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Autem aperiam nulla cupiditate saepe sed quis veritatis minus rem adipisci
+                aliquid.</p>
+<button  style="color:#d6b93bd9" class="bg-black  py-2 px-4 rounded-lg hover:bg-primary/80 transition-colors duration-300"><a href="preorder.html">Coming Soon</a></button>
+        </div>
+    </section>
+</section>
+    <script>
+    // Get all navigation links
+const navLinks = document.querySelectorAll('nav a');
+
+// Add a click event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    const targetId = link.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
+<script>
+ const menuToggle = document.getElementById('menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavClose = document.querySelector('.mobile-nav-close');
+const mobileNavLinks   
+ = document.querySelectorAll('.mobile-nav-list a');
+menuToggle.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
+mobileNavClose.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+});
+
+// Close the mobile navigation when a link is clicked
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+});
+
+</script>
+<script>
+  const nav = document.getElementById('main-nav');
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', function() {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      // User scrolled up
+      nav.classList.remove('hidden');
+    } else {
+      // User scrolled down
+      nav.classList.add('hidden');
+    }
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+<script>
+    // Get modal elements and buttons
+    const modal = document.getElementById('preOrderModal');
+    const thankYouModal = document.getElementById('thankYouModal');
+    const preOrderBtn = document.getElementById('preOrderBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const closeThankYouBtn = document.getElementById('closeThankYouBtn');
+    const preOrderForm = document.getElementById('preOrderForm');
+
+    // Open pre-order modal
+    preOrderBtn.addEventListener('click', function() {
+        modal.classList.remove('hidden'); // Show modal
+    });
+
+    // Close pre-order modal
+    closeBtn.addEventListener('click', function() {
+        modal.classList.add('hidden'); // Hide modal
+    });
+
+    // Close pre-order modal if clicked outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.classList.add('hidden');
+        }
+    });
+
+    // Handle form submission and show thank you modal
+    preOrderForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting
+
+        // Form data can be processed here (e.g., sent to a server)
+
+        // Hide pre-order modal
+        modal.classList.add('hidden');
+
+        // Show thank you modal
+        thankYouModal.classList.remove('hidden');
+    });
+
+    // Close thank you modal
+    closeThankYouBtn.addEventListener('click', function() {
+        thankYouModal.classList.add('hidden'); // Hide thank you modal
+    });
+
+    // Close thank you modal if clicked outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target === thankYouModal) {
+            thankYouModal.classList.add('hidden');
+        }
+    });
+</script>
+</body>
+</html>

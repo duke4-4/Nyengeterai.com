@@ -14,9 +14,30 @@ $run= mysqli_query($conn,$sql);
 
 if($run){
 	
-     
-echo " <center><div style='display:flex; justify-content: center;align-items:center;font-size:30px; text-align: center; background-color:#FFF8CA;width:500px;height:150px;color:black; border-radius: 10px; font-family: Montserrat'> <p>  THANK YOU FOR JOINING THE MOMENTS FAMILY! </p></div> <button style='padding:10px;'> <a style='text-decoration:none; color: #FFF8CA' href='index.html'> Return Home</a> </button></center>
- ";	 
+ echo "
+<center>
+  <div style='display: flex; flex-direction: column; align-items: center; background-color: #FFF8CA; width: 500px; border-radius: 10px; font-family: Montserrat; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);'>
+    <!-- Image at the top -->
+    <img src='your-image.jpg' alt='Thank You' style='width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;'>
+    
+    <!-- Thank you message -->
+    <div style='padding: 20px; text-align: center; color: black; font-size: 24px;'>
+      <p>THANK YOU FOR JOINING THE MOMENTS FAMILY!</p>
+    </div>
+    
+    <!-- Buttons at the bottom -->
+    <div style='display: flex; justify-content: space-around; width: 100%; padding: 10px 0;'>
+      <button style='padding: 10px 20px; background-color: black; border: none; border-radius: 5px;'>
+        <a href='index.html' style='text-decoration: none; color: #FFF8CA;'>Return Home</a>
+      </button>
+      <button style='padding: 10px 20px; background-color: black; border: none; border-radius: 5px;'>
+        <a href='store.html' style='text-decoration: none; color: #FFF8CA;'>Check Out My Store</a>
+      </button>
+    </div>
+  </div>
+</center>
+";
+ 
 	
 	
 }else {
