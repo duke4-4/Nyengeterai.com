@@ -46,19 +46,19 @@
   <!-- <div style="background-color:black ;height:55px" class="w3-row">
 </div> -->
 <div >
-<nav class="bg-black shadow-lg fixed w-full z-50" id="main-nav">
+<nav class="bg-black bg-opacity-50 shadow-lg fixed w-full z-50" id="main-nav">
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex justify-between items-center h-16">
       <div class="flex-shrink-0">
         <img src="./log.png" alt="logo" class="h-12" />
       </div>
       <div class="hidden md:flex space-x-4">
-        <a href="./index.html" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgb(214,185,59)">Home</a>
-        <a href="#About" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgb(214,185,59)">About</a>
-        <a href="#Books" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgb(214,185,59)">Books</a>
-        <a href="#Blog" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgb(214,185,59)">Blog</a>
-        <a href="#Contact" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgb(214,185,59)">Contact</a>
-        <a href="https://moments-store.com" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgb(214,185,59)">Store</a>
+        <a href="./index.html" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgba(214,185,59,0.8)">Home</a>
+        <a href="#About" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgba(214,185,59,0.8)">About</a>
+        <a href="#Books" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgba(214,185,59,0.8)">Books</a>
+        <a href="#Blog" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgba(214,185,59,0.8)">Blog</a>
+        <a href="#Contact" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgba(214,185,59,0.8)">Contact</a>
+        <a href="https://moments-store.com" class="hover:text-white px-3 py-2 rounded-md text-2xl" style="color: rgba(214,185,59,0.8)">Store</a>
       </div>
       <div class="md:hidden">
         <button class="text-white focus:outline-none" onclick="toggleMobileMenu()">
@@ -70,16 +70,16 @@
     </div>
   </div>
 
-  <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-50">
+  <div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm z-50">
     <div class="flex flex-col items-center justify-center h-full">
-      <button onclick="toggleMobileMenu()" class="absolute top-4 right-4 text-4xl" style="color: rgb(214,185,59)">&times;</button>
+      <button onclick="toggleMobileMenu()" class="absolute top-4 right-4 text-4xl" style="color: rgba(214,185,59,0.8)">&times;</button>
       <div class="flex flex-col items-center space-y-8">
-        <a href="./index.html" class="text-3xl transform transition-transform hover:scale-110" style="color: rgb(214,185,59)">Home</a>
-        <a href="#About" class="text-3xl transform transition-transform hover:scale-110" style="color: rgb(214,185,59)">About</a>
-        <a href="#Books" class="text-3xl transform transition-transform hover:scale-110" style="color: rgb(214,185,59)">Books</a>
-        <a href="#Blog" class="text-3xl transform transition-transform hover:scale-110" style="color: rgb(214,185,59)">Blog</a>
-        <a href="#Contact" class="text-3xl transform transition-transform hover:scale-110" style="color: rgb(214,185,59)">Contact</a>
-        <a href="store.html" class="text-3xl transform transition-transform hover:scale-110" style="color: rgb(214,185,59)">Store</a>
+        <a href="./index.html" class="text-3xl transform transition-transform hover:scale-110" style="color: rgba(214,185,59,0.8)">Home</a>
+        <a href="#About" class="text-3xl transform transition-transform hover:scale-110" style="color: rgba(214,185,59,0.8)">About</a>
+        <a href="#Books" class="text-3xl transform transition-transform hover:scale-110" style="color: rgba(214,185,59,0.8)">Books</a>
+        <a href="#Blog" class="text-3xl transform transition-transform hover:scale-110" style="color: rgba(214,185,59,0.8)">Blog</a>
+        <a href="#Contact" class="text-3xl transform transition-transform hover:scale-110" style="color: rgba(214,185,59,0.8)">Contact</a>
+        <a href="store.html" class="text-3xl transform transition-transform hover:scale-110" style="color: rgba(214,185,59,0.8)">Store</a>
       </div>
     </div>
   </div>
@@ -225,8 +225,8 @@ window.addEventListener('scroll', () => {
                     required
                   />
                   <button
-                    type="submit"
-                    class="w-full py-1.5 px-3 bg-black text-yellow-500 text-sm font-medium rounded-lg hover:bg-yellow-500 hover:text-black transition duration-150"
+                    type="submit" style="color:#d6b93bd9"
+                    class="w-full py-1.5 px-3 bg-black text-yellow-500 text-sm font-medium rounded-lg  hover:text-black transition duration-150"
                   >
                     Subscribe
                   </button>
@@ -249,15 +249,130 @@ window.addEventListener('scroll', () => {
 
             // Add scroll event listener
             window.addEventListener('scroll', () => {
-              const firstSection = document.getElementById('home');
+              const thirdSection = document.getElementById('Books'); // Changed to target third section
               
-              if (!hasShownPopup && isElementInViewport(firstSection)) {
+              if (!hasShownPopup && isElementInViewport(thirdSection)) {
                 document.getElementById('newsletter-popup').classList.remove('hidden');
                 hasShownPopup = true;
               }
             });
           </script>
         </div>
+      <div id="launch-modal" class="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center">
+        <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+        
+        <div class="relative bg-white rounded-lg max-w-lg w-full mx-4 p-6">
+          <div class="absolute top-4 right-4">
+            <button onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Moments with God High Tea Launch</h3>
+            <img src="./Website_Mockup-01.jpg" alt="High Tea Event" class="w-full h-48 object-cover rounded-lg mb-4">
+            <p class="text-gray-600 mb-6">Join us for an elegant afternoon of fellowship, inspiration and delightful refreshments as we launch my journal, Moments with God.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <button  style="color:#d6b93bd9" onclick="openTicketModal()" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-[#d6b93bd9] hover:text-white transition duration-150">
+                Buy Tickets
+              </button>
+              <button onclick="addToCalendar()" class="inline-flex items-center px-6 py-3 border border-black text-base font-medium rounded-md text-black hover:bg-[#d6b93bd9] transition duration-150">
+                Add to Calendar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Modal -->
+      <div id="ticketModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000;">
+        <div class="modal-content" style="background-color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; width: 80%; max-width: 500px; border-radius: 8px;">
+          <span class="close" onclick="closeTicketModal()" style="float: right; cursor: pointer; font-size: 24px;">&times;</span>
+          <h2 style="margin-bottom: 20px; text-align: center; font-size: 1.5rem;">Purchase Ticket</h2>
+          <form id="ticketForm" action="checkout.php" method="POST">
+            <div style="margin-bottom: 15px;">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+            <input type="hidden" id="ticketId" name="ticketId">
+            <input type="hidden" name="quantity" value="1">
+            <input type="hidden" name="amt" value="25">
+            <button type="submit" class="calendar-btn" style="background-color: #d6b93b; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; width: 100%;" onclick="send()">Buy a Ticket</button>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        // Show launch modal when page loads
+        window.addEventListener('load', () => {
+          document.getElementById('launch-modal').style.display = 'flex';
+        });
+
+        // Close launch modal
+        function closeModal() {
+          document.getElementById('launch-modal').style.display = 'none';
+        }
+
+        // Ticket modal functions
+        function generateTicketId() {
+          return 'TKT-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+        }
+
+        function openTicketModal() {
+          closeModal(); // Close launch modal first
+          document.getElementById('ticketModal').style.display = 'block';
+          document.getElementById('ticketId').value = generateTicketId();
+        }
+
+        function closeTicketModal() {
+          document.getElementById('ticketModal').style.display = 'none';
+        }
+
+        function send() {
+          const email = document.getElementById('email').value;
+          const name = document.getElementById('name').value;
+          const phone = document.getElementById('phone').value;
+          const quantity = 1;
+          const amt = quantity * 25;
+          window.location.href = `checkout.php?email=${email}&amt=${amt}&name=${name}&phone=${phone}&quantity=${quantity}&product=ticket`;
+        }
+
+        // Add to calendar functionality
+        function addToCalendar() {
+          const event = {
+            title: 'Moments with God High Tea Launch',
+            location: 'Event Location',
+            description: 'Join us for an elegant afternoon of fellowship, inspiration and delightful refreshments.',
+            start: '2024-03-01T14:00:00', // Update with actual date
+            end: '2024-03-01T17:00:00',   // Update with actual date
+          };
+
+          const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&location=${encodeURIComponent(event.location)}&details=${encodeURIComponent(event.description)}&dates=${event.start.replace(/[-:]/g, '')}/${event.end.replace(/[-:]/g, '')}`;
+          
+          window.open(googleCalendarUrl, '_blank');
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+          if (event.target == document.getElementById('ticketModal')) {
+            closeTicketModal();
+          }
+          if (event.target == document.getElementById('launch-modal')) {
+            closeModal();
+          }
+        }
+      </script>
       </div>
     </div>
   </section>
@@ -371,10 +486,8 @@ window.addEventListener('scroll', () => {
       </div>
    </div>
 </section>
-<!-- 
-<div id="book-promo-modal" class="hidden fixed left-8 bottom-8 z-50 max-w-sm bg-white rounded-lg shadow-xl">
-  <div class="relative p-6">
-  
+<div id="book-promo-modal" class="hidden fixed top-4 left-4 z-50">
+  <div class="relative p-6 bg-white rounded-lg shadow-xl max-w-sm">
     <button 
       onclick="document.getElementById('book-promo-modal').classList.add('hidden')"
       class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
@@ -384,7 +497,6 @@ window.addEventListener('scroll', () => {
       </svg>
     </button>
 
-    
     <div class="flex flex-col items-center">
       <img 
         src="./MOG.jpeg"
@@ -397,7 +509,7 @@ window.addEventListener('scroll', () => {
       </p>
       <a
         href="preorder.html"
-       style="color:#d6b93bd9" class="w-full py-2 px-4 bg-black text-[#d6b93bd9] text-center font-medium rounded-lg hover:bg-[#d6b93bd9] hover:text-white transition duration-300"
+        style="color:#d6b93bd9" class="w-full py-2 px-4 bg-black text-[#d6b93bd9] text-center font-medium rounded-lg hover:bg-[#d6b93bd9] hover:text-white transition duration-300"
       >
         Buy Now
       </a>
@@ -405,12 +517,28 @@ window.addEventListener('scroll', () => {
   </div>
 </div>
 
-<script> -->
+<script>
+  // Flag to ensure popup only shows once
+  let hasShownBookPromo = false;
 
-  <!-- setTimeout(() => {
-    document.getElementById('book-promo-modal').classList.remove('hidden');
-  }, 2000);
-</script> -->
+  // Function to check if element is in viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.bottom <= 0 // Element has scrolled past viewport
+    );
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', () => {
+    const firstSection = document.getElementById('home');
+    
+    if (!hasShownBookPromo && isElementInViewport(firstSection)) {
+      document.getElementById('book-promo-modal').classList.remove('hidden');
+      hasShownBookPromo = true;
+    }
+  });
+</script>
 
 <section id="Books" class="bg-background text-primary-foreground py-16 px-4 md:px-8">
   <div class="max-w-4xl mx-auto">
