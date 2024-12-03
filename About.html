@@ -1,138 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momemnts | About</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            /* align-items: center; */
-            justify-content: center;
-            min-height: 100vh;
-        }
+<title>About - Nyengeterai</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" type="image/png" href="fav.png">
+<link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        #contact-form {
-            display: none;
-        }
-
-        #powered-by {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            color: #666;
-            font-size: 12px;
-            z-index: 1000;
-        }
-
-        #open-popup-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            padding: 20px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #open-popup-btn i {
-            font-size: 24px;
-        }
-    </style>
+<style>
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+</style>
 </head>
-<body class="font-sans">
-    <!-- responsive header with a navbar and logo to the left -->
-     <header class="bg-gray-800 shadow-md w-full h-16 p-4">
-        <div class="flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold text-white hover:text-gray-900">Moments</a>
-            <div class="flex items-center">
-                <a href="./About.html" class="ml-4 text-white hover:text-gray-700">About</a>
-                <a href="./Blog.html" class="ml-4 text-white hover:text-gray-700">Blog</a>
-                <a href="./Contact.html" class="ml-4 text-white hover:text-gray-700">Contact</a>
-            </div>
-        </div>
-     </header>
 
-<div id="contact-form" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded shadow-lg">
-    <button id="close-btn" class="text-gray-700 hover:text-red-600 font-bold text-xl absolute top-2 right-2" onclick="closeForm()">X</button>
-    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-<form action="https://fabform.io/f/{form-id}" method="post" class="space-y-4">
-        <div>
-            <label for="name" class="block text-sm font-medium text-gray-600">Name:</label>
-            <input type="text" id="name" name="name" required
-                   class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
-        </div>
+<body class="bg-white">
+<!-- Copy the navbar from index.html but update the active state -->
+<nav class="bg-black shadow-lg fixed w-full z-50" id="main-nav">
+  <!-- Same navbar structure as index.html but with About link active -->
+</nav>
 
-        <div>
-            <label for="email" class="block text-sm font-medium text-gray-600">Email:</label>
-            <input type="email" id="email" name="email" required
-                   class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+<div class="pt-20 px-4 md:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-center justify-between -mx-4">
+      <div class="w-full px-4 lg:w-1/2">
+        <h1 class="text-4xl font-bold mb-6">Who is Nyengeterai?</h1>
+        <div class="prose max-w-none">
+                <p class="mb-5 text-base text-body-color dark:text-dark-6"></p>
+                 I am the CEO OF True Reflections,personal brand, an international transformational speaker, podcast host, a life coach. </span><br><br>
+&#x2192  <span>I have coached thousands of women ,youth and more. I share my message with various groups of people at live events.</span><br><br>
+&#x2192  <span> I am on a mission to shift mindsets and inspire action. I work with women and the youth from diverse backgrounds. </span><br><br>
+ &#x2192  <span> I am the founder of the I am Women's Conference in Zimbabwe.My vision is to touch lives by inspiring them and stimulating their inner core to achieve their dreams, attain their greatest potential, and live a meaningful life full of endless possibilities.</span><br><br>
+ &#x2192  <span>My purpose is to connect with the soul of my audience. I love people, connecting with the human spirit, touching the human soul, and inspiring people to bring out the best possibilities in them from within.
+               </p>
         </div>
-
-        <div>
-            <label for="message" class="block text-sm font-medium text-gray-600">Message:</label>
-            <textarea id="message" name="message" rows="4" required
-                      class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+      </div>
+      <div class="w-full px-4 lg:w-1/2">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="a.jpg" alt="" class="rounded-lg">
+          <img src="b.jpg" alt="" class="rounded-lg">
+          <img src="c.jpg" alt="" class="rounded-lg">
+          <img src="d.jpg" alt="" class="rounded-lg">
         </div>
-
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Submit
-        </button>
-    </form>
-  <a href="https://fabform.io" target="_blank" id="powered-by" class="text-gray-700 hover:text-blue-500">
-    Powered By FabForm.io
-</a>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
-<button id="open-popup-btn">
-    <i id="popup-icon" class="fas fa-comment"></i>
-</button>
-
-<script>
-    const openPopupBtn = document.getElementById('open-popup-btn');
-    const contactForm = document.getElementById('contact-form');
-    const popupIcon = document.getElementById('popup-icon');
-
-    openPopupBtn.addEventListener('click', function () {
-        if (contactForm.style.display === 'block') {
-            contactForm.style.display = 'none';
-            popupIcon.classList.remove('fa-comment');
-            popupIcon.classList.add('fa-comment-alt');
-        } else {
-            contactForm.style.display = 'block';
-            popupIcon.classList.remove('fa-comment-alt');
-            popupIcon.classList.add('fa-comment');
-        }
-    });
-
-    function closeForm() {
-        contactForm.style.display = 'none';
-        popupIcon.classList.remove('fa-comment');
-        popupIcon.classList.add('fa-comment-alt');
-    }
-
-    contactForm.addEventListener('click', function (e) {
-        if (e.target === this) {
-            closeForm();
-        }
-    });
-</script>
-
-    
 </body>
-
 </html>
